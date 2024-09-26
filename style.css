@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body {
+      background-color: hsl(328, 100%, 50%);
+    }
+    
+    header {
+      display: flex;
+      justify-content: space-around;
+      background-color: rgb(150, 146, 146);
+      
+    }
+    
+    main {
+      background-color: #d9ff00;
+      font-family: Arial, sans-serif;
+      font-size: 150%;
+      text-align: justify;
+      display: flex;
+      margin-left:1%;
+    }
+    .titre{
+      text-align: center;
+      background-color: rgb(240, 95, 38);
+    }
+    
+    
+    @media screen and (max-width: 830px) {
+      header .section-supérieur{
+        font-size: 8px;
+      }
+    }
+    
+    @media screen and (min-width:350px) {
+      .image1 {
+        margin:auto;
+        width:40%;
+      }
+    }
+    
+    .presentation{
+      display: flex;
+      margin:5%;
+      text-align: center;
+      box-shadow: 10px 5px 5px black;
+      border-radius: 10px;
+      background-color: lightgray;
+      
+    }
+
+    .form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 5%;
+    }
+
+    table{
+      width: 90%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    th, td{
+      padding:10px;
+      text-align:center;
+      border:1px solid #ddd;
+    }
+    
+    th{
+      background-color: #333;
+      color: #fff;
+    }
+
+    tr:nth-child(even){
+      background-color:#f9f9f9;
+    }
+
+    tr:hover {
+      background-color:#f1f1f1;
+    }
+
+    a{
+      text-decoration : none;
+      color : #007bff;
+      padding:5px 10px;
+      border-radius:5px;
+    }
+    
+    a:hover{
+      background-color : #e9ecef;
+    }
+
+
+    .presentation_tournoi{
+      display: flex;
+      margin: 5%;
+      text-align: center;
+      border:solid 1px black;
+      justify-content: center;
+    }
+    .Tableau_tournoi{
+      background-color:grey;
+      justify-content:center;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+  }
