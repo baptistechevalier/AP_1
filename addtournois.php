@@ -8,9 +8,10 @@
 </head>
 
 <body>
+	<?php include('header.php') ?>
 	<main>
-		<?php include('header.php') ?>
-		<div class = "liste_des_tournois">
+		<br>
+		<div class = "titre">
 			<h2>Ajouté un tournoi</h2>
 		</div>
 
@@ -21,8 +22,8 @@
 					<td><input type="text" name="nom_tournoi"></td>
 				</tr>
 				<tr> 
-					<td>Date et heure : </td>
-					<td><input type="text" name="date_debut"></td>
+					<td>Date et heure (YYYY-MM-DD HH-MM-SS) : </td>
+					<td><input type="date" name="date"></td>
 				</tr>
 				<tr> 
 					<td>Jeu du tournoi :</td>
@@ -34,12 +35,14 @@
 				</tr>
 			</table>
 		</form>
-		<h3>Tableau des differente jeux</h3>
+		<div class="titre">
+			<h3>Tableau des différents jeux</h3>
+		</div>
 		<table width='80%' border=0>
 			<tr bgcolor='#DDDDDD'>
 				<td><strong>Jeux</strong></td>
 				<td><strong>ID du jeux</strong></td>
-			
+				<td><strong>Pateformes</strong></td>
 			</tr>
 			<?php
 			require_once("db_connect.php");
@@ -55,8 +58,12 @@
 	
 			?>
 		</table>
-		<?php include('footer.php') ?>
+		<br>
+		<br>
+		<br>
+		<br>
 	</main>	
+	<?php include('footer.php'); ?>
 </body>
 </html>
 

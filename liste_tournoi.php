@@ -4,8 +4,9 @@ try{
     $stmt = $pdo->query($sql);
     $tournois = $stmt->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e){
-    echo "Erreur : ". $e->getMessage(); //sOn arrête le script en cas d'erreur pour éviter d'afficher du code non sécurisé
+    echo "Erreur : ". $e->getMessage(); //On arrête le script en cas d'erreur pour éviter d'afficher du code non sécurisé
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -18,8 +19,13 @@ try{
 <body>
     <?php include("header.php");?>
     <main>
+        <br>
         <div class = "presentation_tournoi">
-            <h1>Tournoi à venir</h1>
+            <h1><b>Tournoi à venir</b></h1>
+        </div>
+        <div class = "description">
+            <br>
+            <p>Plongez dans l'univers passionnant des jeux vidéo avec nos tournois réguliers. Que vous soyez un amateur ou un compétiteur aguerri, nos événements sont ouverts à tous. Chaque tournoi est conçu pour offrir des expériences uniques sur vos jeux préférés et des plateformes variées. Venez défier d'autres joueurs, montrez vos compétences, et tentez de remporter de superbes prix !</p>
         </div>
         <div class="Tableau_tournoi">
             <table border="1">
@@ -43,6 +49,12 @@ try{
                 <?php endforeach;?>
             </table>
         </div>
+        <div class="photo">
+            <img src="arras_game1.png" class="responsive" witdh="500px" height="500px">
+        </div>
+        <br>
+        <br>
+        <br>
     </main>
     <?php include("footer.php");?>
 </body>

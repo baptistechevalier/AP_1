@@ -6,57 +6,44 @@
     
     body {
       background-color: hsl(328, 100%, 50%);
+      
     }
     
     header {
       display: flex;
       justify-content: space-around;
-      background-color: rgb(150, 146, 146);
-      
     }
     
     main {
-      background-color: #d9ff00;
       font-family: Arial, sans-serif;
       font-size: 150%;
       text-align: justify;
       display: flex;
-      margin-left:1%;
+      padding-left:1%;
+      padding-right : 1%;
+      background-color: #333;
     }
     .titre{
+      /* margin-top: 3%; */
       text-align: center;
-      background-color: rgb(240, 95, 38);
-    }
-    
-    
-    @media screen and (max-width: 830px) {
-      header .section-supérieur{
-        font-size: 8px;
-      }
-    }
-    
-    @media screen and (min-width:350px) {
-      .image1 {
-        margin:auto;
-        width:40%;
-      }
+      margin-left: 30%;
+      margin-right: 30%;
+      border-radius: 10px;
+      box-shadow : 10px 5px 5px white;
+      background-color:#e9ecef;
+      color : black;
     }
     
     .presentation{
       display: flex;
-      margin:5%;
+      justify-content: center;
+      margin-left :20%;
+      margin-right:20%;
       text-align: center;
-      box-shadow: 10px 5px 5px black;
+      box-shadow: 10px 5px 5px rgb(223, 115, 21);
       border-radius: 10px;
-      background-color: lightgray;
+      background-color: rgb(254, 219, 31);
       
-    }
-
-    .form{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 5%;
     }
 
     table{
@@ -92,26 +79,84 @@
       padding:5px 10px;
       border-radius:5px;
     }
-    
     a:hover{
-      background-color : #e9ecef;
+      background-color:#e9ecef;
     }
 
 
     .presentation_tournoi{
-      display: flex;
-      margin: 5%;
+      margin-top:3%;
+      margin-left: 25%;
+      margin-right:25%;
       text-align: center;
-      border:solid 1px black;
       justify-content: center;
+      color:#fff;
+      border-radius: 10px;
+      background-color: rgb(251, 14, 70);
+      box-shadow: 10px 5px 5px rgb(251, 14, 100);
     }
-    .Tableau_tournoi{
-      background-color:grey;
+    .description{
+      color:#fff;
       justify-content:center;
+      text-align: justify;
+      padding-left: 5%;
+      padding-right:5%;
+    }
+   
+    .Tableau_tournoi{
+      justify-content:center;
+      text-align: center;
     }
     footer {
       background-color: #333;
       color: white;
       text-align: center;
-      padding: 1rem 0;
-  }
+      padding: 5%;
+    }
+
+    .principale{
+    background-image: url(image.png);
+    } 
+
+    form{
+    justify-content : center;
+    text-align : center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    }
+    .inscription{
+    text-align : center;
+    }
+
+    .formulaire_connexion{
+      border-radius: 5%;
+      border:solid;
+      margin-left : 30%;
+      margin-right : 30%;
+      background-color: rgb(137, 135, 135);
+    }
+
+       
+    .intro{
+      justify-content: center;
+      text-align:center;
+      margin-top: 5%;
+      margin-left:15%;
+      margin-right: 15%;
+      border-radius: 5%;
+      color:#ddd;
+    }
+    .photo{
+      justify-content : center;
+      margin-top:5%;
+      margin-left:15%;
+      margin-right:15%;
+      text-align : center;
+    }
+    img.responsive {
+      max-width: 100%;
+      height: auto;
+    }
+   

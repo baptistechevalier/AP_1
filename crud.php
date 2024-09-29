@@ -17,8 +17,9 @@ $stmt->execute();
 </head>
 
 <body>
+	<?php include('header.php'); ?>
 	<main>
-    	<?php include('header.php') ?>
+		<br>
 		<div class="titre">
 			<h2>Accueil</h2>
 		</div>
@@ -46,7 +47,10 @@ $stmt->execute();
 	
 			?>
 		</table>
-    	<?php include('footer.php') ?>
-	</main>	
+		<br>
+		<br>
+		<br>
+	</main>
+	<?php include('footer.php'); ?>
 </body>
 </html>

@@ -14,8 +14,9 @@ $stmt->execute();
 </head>
 
 <body>
+	<?php include('header.php'); ?>
 	<main>
-		<?php include('header.php') ?>
+		<br>
 		<div class="titre">	
 			<h2>Gérer les tournois</h2>
 		</div>
@@ -45,7 +46,11 @@ $stmt->execute();
 	
 			?>
 		</table>
-		<?php include('footer.php') ?>
+		<br>
+		<br>
+		<br>
+		<br>
 	</main>	
+	<?php include('footer.php'); ?>
 </body>
 </html>
